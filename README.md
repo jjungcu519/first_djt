@@ -5,7 +5,8 @@
 - 자바의 스프링, 자바스크립트의 node와 같은 역할을 수행함
 
 ### 동작 과정
-1. request 12
+![](https://github.com/DMF-DA1/first_pjt/raw/master/assets/MTV.png)
+1. request 127.0.0.1:8000
 2. url.py
 3. views.py / 프론트 역할
 4. model.py
@@ -60,3 +61,12 @@ INSTALLED_APPS = [
     뉴스2
     뉴스3
     ... 데이터베이스에서 가져와서 넣을거임. 이때 render 함수가 역할을 함
+
+
+## 오후 수업
+### 변수 라우팅: <>
+- username
+- cube
+### 게시물 n개 반복 작업
+- posts
+    - pip install faker

@@ -1,4 +1,6 @@
+#라이브러리 불러오기
 from django.shortcuts import render
+from faker import Faker
 import random
 
 # Create your views here.
@@ -35,4 +37,31 @@ def lotto(request):
     
     return render(request, 'lotto.html', context)
 
+def username(request, name):
+    context = {
+        'name' : name,
+    }
+    
+    return render(request, 'username.html', context)
 
+def cube(request, number):
+    result = number ** 3
+    context = {
+        'cube' : result,
+    }
+
+    return render(request, 'cube.html', context)
+
+def posts(request):
+    fake = Faker()
+    
+    fake_posts = []
+
+    for i in range(100):
+        fake_posts.append(fake.text())
+
+    context = {
+        'fake_posts' : fake_posts,
+    }
+
+    return render(request, 'posts.html', context)
