@@ -51,10 +51,14 @@ INSTALLED_APPS = [
     ...
     '{앱이름}',
 ]
-
-8. urlpatterns > path (이정표 세우기)
-어떤 경로(index) 가 들어오면 (요청), 실행할거야. (views.py)
 ```
+8. urls.py의 urlspatterns
+- 이정표 (path) 세우기
+    - 어떤 경로(index) 가 들어오면 (요청), 실행할거야. (views.py)
+    - from {앱이름} import views
+
+
+
 
 /// 지금 루트 url > 앱 템플릿에 html 생성 > views.py에 기능 편집 
     url 페이지에 뉴스1
@@ -64,6 +68,9 @@ INSTALLED_APPS = [
 
 
 ## 오후 수업
+### 기본 flow
+- url > 앱 템플릿에 html 생성 > views.py에 기능 편집
+- cdn은 css적 요소를 살리기 위해 넣는 코드~! (설명이 충분한가?)
 ### 변수 라우팅: <>
 - username
 - cube
