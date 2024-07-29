@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from first_app import views
 
+# 이정표 (경로[요청], 기능 수행)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
@@ -28,4 +29,6 @@ urlpatterns = [
     path('username/<name>/', views.username),
     path('cube/<int:number>/', views.cube),
     path('posts/', views.posts),
+    path('ping/', views.ping),
+    path('pong/', views.pong),
 ]

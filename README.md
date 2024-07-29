@@ -57,8 +57,8 @@ INSTALLED_APPS = [
     - 어떤 경로(index) 가 들어오면 (요청), 실행할거야. (views.py)
     - from {앱이름} import views
 
-
-
+<br>
+    
 
 /// 지금 루트 url > 앱 템플릿에 html 생성 > views.py에 기능 편집 
     url 페이지에 뉴스1
@@ -66,14 +66,23 @@ INSTALLED_APPS = [
     뉴스3
     ... 데이터베이스에서 가져와서 넣을거임. 이때 render 함수가 역할을 함
 
+<br>
 
 ## 오후 수업
 ### 기본 flow
 - url > 앱 템플릿에 html 생성 > views.py에 기능 편집
 - cdn은 css적 요소를 살리기 위해 넣는 코드~! (설명이 충분한가?)
 ### 변수 라우팅: <>
-- username
-- cube
+- username.html : username
+- cube.html : cube
 ### 게시물 n개 반복 작업
-- posts
-    - pip install faker
+- 시각적 확인을 위해 활용
+    - posts.html
+        - pip install faker
+        - lorem을 쓰는 방법도 있을듯
+
+### label과 input 정보 연결
+-form 태그 (핑퐁)
+    - label for "{name}" 와 input id "{name}" 를 통일
+    - name 속성(?) : 요청에 이름을 붙여줘~
+    - 
